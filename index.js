@@ -12,5 +12,6 @@ historia.forEach(function (palavra) {
 }
 });
 
-let palavras = Object.entries(palavra);
+let palavras = Object.entries(ocorrencias);
 console.log(ocorrencias);
+console.log(palavras)
