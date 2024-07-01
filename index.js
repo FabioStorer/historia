@@ -1,8 +1,16 @@
 const prompt = require('prompt-sync')();
-let historia = []
+let ocorrencias = [];
+let historia = prompt('Olá. Estou aqui para ouvir uma história sua. Pode começar a digitar: ').trim().replaceAll(',', '').replaceAll('.', '').split(' ');
 
-historia = prompt('Olá. Estou aqui para ouvir uma história sua. Pode começar a digitar: ');
+console.log('A sua história é muito interessante. Ela possui ', historia.length, ' palavras.');
 
-historia.split( )
+historia.forEach(function (palavra) {
+    if (ocorrencias[palavra]) {
+        ocorrencias[palavra]++
+} else {
+    ocorrencias[palavra] = 1
+}
+});
 
-console.log(historia.length)
+let palavras = Object.entries(palavra);
+console.log(ocorrencias);
